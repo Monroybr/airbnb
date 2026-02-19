@@ -41,5 +41,7 @@
     &__informacion{
         @include m.boton(v.$blanco, v.$negro);
         border-radius: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
     }
 }
