@@ -40,3 +40,13 @@
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
 }
+
+@mixin scrollHorizontal{ //crea el efecto de scroll de imagenes
+    overflow-y: hidden; //sirve para haver el scroll de la imagenes Y es arriga y abajo
+    overflow-x: scroll; //X es izquierda y derecha 
+    scroll-snap-type: x mandatory;
+
+    >*{
+        scroll-snap-align: center;
+    }
+}
